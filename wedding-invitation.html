@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f8f4eb" />
+  <meta name="description" content="دعوة زفاف علي الدين وآلاء — الجمعة ٦ نوفمبر ٢٠٢٦ في Agamy garden." />
+  <title>دعوة زفاف علي الدين وآلاء | ٦ نوفمبر ٢٠٢٦</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --cream: #faf7f0;
+      --ivory: #f5f0e7;
+      --ink: #514d41;
+      --muted: #827f71;
+      --gold: #a1844d;
+      --gold-deep: #8e703d;
+      --gold-pale: #d9c7a3;
+      --sage: #87967d;
+      --border: #d6c9af;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: #eee9df; color: var(--ink); font-family: 'Amiri', Georgia, serif; -webkit-font-smoothing: antialiased; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    button { font: inherit; cursor: pointer; }
+    a { color: inherit; }
+    .site {
+      position: relative; isolation: isolate; width: 100%; max-width: 690px;
+      min-height: 100svh; margin: 0 auto;
+      background: var(--cream); overflow: hidden;
+      box-shadow: 0 12px 45px rgba(65,49,27,.045);
+    }
+    .site::before, .site::after {
+      content: ''; position: absolute; inset: 10px 10px auto; height: calc(100% - 20px);
+      border: 1px solid rgba(161,132,77,.48); pointer-events: none; z-index: 20;
+    }
+    .site::after { inset: 15px 15px auto; height: calc(100% - 30px); border-color: rgba(161,132,77,.15); }
+    .english {
+      font-family: 'Cormorant Garamond', Georgia, serif; direction: ltr;
+      text-transform: uppercase; letter-spacing: .33em; color: var(--gold-deep);
+      font-size: 13px; font-weight: 600;
+    }
+    .gold { color: var(--gold); }
+    .cover {
+      position: relative; z-index: 2; min-height: 100svh; padding: clamp(86px, 15vh, 155px) 24px 55px;
+      display: flex; flex-direction: column; align-items: center; text-align: center;
+      background:
+        radial-gradient(ellipse 90% 56% at 50% 48%, rgba(255,253,247,.96), rgba(255,251,244,.23) 67%, transparent 100%),
+        radial-gradient(ellipse 90% 40% at 50% 86%, rgba(218,202,173,.28), transparent 95%),
+        linear-gradient(135deg,#f6f1e8,#faf8f1 55%,#f5efe7);
+    }
+    .cover .english { margin: 0; }
+    .cover h1 {
+      margin: 18px 0 11px; color: var(--gold); font-size: clamp(45px, 10.8vw, 72px);
+      line-height: 1.45; font-weight: 400; white-space: nowrap;
+    }
+    .cover .intro { font-size: clamp(19px, 4.8vw, 26px); line-height: 1.9; margin: 0 0 28px; }
+    .envelope {
+      --envelope-tint: #efe5d3;
+      width: min(100%, 360px); height: 238px; position: relative;
+      margin: 6px auto 32px; filter: drop-shadow(0 3px 8px rgba(123,101,72,.085));
+      perspective: 700px;
+    }
+    .envelope .paper {
+      position: absolute; inset: 0; background: linear-gradient(160deg,#f9f5ec,#eee2ce);
+      border: 1px solid #d5c3a0;
+    }
+    .envelope .back-fold {
+      position: absolute; inset: 0; background: linear-gradient(160deg,#fcfaf4 0%,#f6ede0 78%);
+      clip-path: polygon(0 0,100% 0,50% 59%);
+      z-index: 1;
+      filter: drop-shadow(0 2px 2px #c7b38e);
+    }
+    .envelope .lower-fold {
+      position: absolute; inset: 0; background: #eee3d0;
+      clip-path: polygon(0 100%, 0 10%, 50% 58%,100% 10%,100% 100%);
+      z-index: 2;
+    }
+    .envelope .front-fold {
+      position: absolute; inset: 0; background: linear-gradient(to top, #eee4d4, #f6edde);
+      clip-path: polygon(0 100%,50% 50%,100% 100%); z-index: 3;
+    }
+    .envelope .fold-lines { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 4; pointer-events: none; }
+    .seal {
+      position: absolute; width: 91px; height: 91px; left: 50%; top: 58%;
+      transform: translate(-50%,-50%); border-radius: 50%; z-index: 6;
+      background: radial-gradient(circle at 27% 22%,#d6be85 0%, #b99655 42%, #94743e 100%);
+      border: 4px double #eee0b0; outline: 2px solid #a47d3c;
+      box-shadow: 0 3px 9px rgba(83,59,20,.23),inset 0 0 0 2px rgba(255,239,193,.5);
+      display: grid; place-items: center; color: #fff5dd; font-size: 34px; line-height: 1;
+      white-space: nowrap;
+    }
+    .seal span { margin-top: -2px; }
+    .open-button {
+      display: inline-flex; align-items: center; justify-content: center; gap: 13px;
+      min-width: 169px; min-height: 55px; border: 0; border-radius: 4px;
+      background: var(--gold); color: #fffaf2; font-size: 24px;
+      padding: 8px 24px; box-shadow: 0 4px 9px rgba(87,66,36,.05);
+      transition: background .2s, transform .2s;
+    }
+    .open-button:hover, .open-button:focus-visible { background: var(--gold-deep); transform: translateY(-2px); }
+    .open-button:focus-visible, .calendar-button:focus-visible, .map-button:focus-visible { outline: 3px solid #d8b974; outline-offset: 4px; }
+    .open-button svg { width: 20px; height: 20px; }
+    .cover-meta { margin-top: 11px; font-size: 17px; color: #9a907e; direction: ltr; }
+    .invitation { display: none; position: relative; text-align: center; animation: invitation-in .7s ease both; }
+    .site.is-open .cover { display: none; }
+    .site.is-open .invitation { display: block; }
+    @keyframes invitation-in { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: translateY(0); } }
+    .floral { position: absolute; width: 280px; height: 290px; pointer-events: none; z-index: 0; opacity: .92; }
+    .floral.top-left { top: 0; left: -65px; transform: rotate(-2deg); }
+    .floral.bottom-right { right: -122px; bottom: -50px; transform: rotate(185deg) scale(.76); opacity: .72; }
+    .floral.middle-right { right: -126px; top: -80px; transform: rotate(180deg) scale(.8); opacity: .68; }
+    .opening-section { position: relative; padding: 113px 24px 70px; }
+    .opening-section > :not(.floral), .story-section > :not(.floral), .venue-section > :not(.floral) { position: relative; z-index: 1; }
+    .invitation-overline { margin-bottom: 22px; }
+    .opening-section .greeting { font-size: clamp(23px,5.5vw,30px); margin: 0 0 11px; line-height: 2; }
+    .opening-section .family-lead { margin: 0; font-size: clamp(22px,5.1vw,28px); }
+    .family-block { padding-top: 30px; }
+    .family-title { color: var(--muted); font-size: 18px; line-height: 1.6; }
+    .family-name { font-size: clamp(26px,6.5vw,36px); margin: 7px 0 0; line-height: 1.75; }
+    .and { font-size: 25px; color: var(--muted); line-height: 2; }
+    .wedding-lead { font-size: clamp(24px,5.9vw,33px); margin: 26px 0 13px; }
+    .big-names { color: var(--gold); font-size: clamp(55px,12.5vw,83px); line-height: 1.85; margin: 14px 0 2px; font-weight: 400; }
+    .big-names span { display: block; }
+    .big-names small { font-size: .45em; line-height: .5; color: var(--sage); display: block; }
+    .heart-rule { display: flex; align-items: center; justify-content: center; gap: 18px; width: min(270px, 80%); margin: 32px auto 30px; color: var(--gold); }
+    .heart-rule::before, .heart-rule::after { content: ''; height: 1px; flex: 1; background: #c3b08c; }
+    .heart-rule svg { width: 20px; height: 20px; }
+    .story-section { position: relative; padding: 20px 24px 65px; }
+    .couple-full { font-size: clamp(21px,5vw,29px); line-height: 1.9; margin: 0 auto 27px; max-width: 475px; }
+    .romantic-message { font-size: clamp(22px,5.3vw,29px); line-height: 2.05; margin: 0 auto 29px; max-width: 470px; }
+    .special-date { color: var(--gold); font-size: clamp(29px,7vw,42px); margin: 0 0 20px; line-height: 1.9; }
+    .scroll-hint { color: #7b7a6e; font-size: 20px; margin: 0 auto 55px; }
+    .thin-rule { width: min(330px,85%); margin: 0 auto 62px; height: 1px; background: linear-gradient(90deg,transparent, #dcd0bb,transparent); }
+    .section-title { font-size: clamp(39px,9.8vw,56px); font-weight: 400; color: var(--gold); line-height: 1.6; margin: 19px 0 19px; }
+    .day-text { font-size: clamp(23px,5.3vw,30px); line-height: 1.9; margin: 0 auto 35px; }
+    .day-text span { display: block; }
+    .schedule { width: min(395px, 100%); display: grid; grid-template-columns: 1fr 1fr; margin: 0 auto 48px; }
+    .schedule-item { padding: 7px 10px 4px; }
+    .schedule-item:first-child { border-left: 1px solid var(--gold-pale); }
+    .schedule-label { font-size: clamp(22px, 5.3vw, 29px); margin: 0 0 12px; }
+    .schedule-time { font-size: clamp(38px, 10vw, 55px); font-weight: 700; color: var(--gold); line-height: 1.6; margin: 0; direction: ltr; }
+    .schedule-period { color: #817e72; font-size: 20px; margin: 0; }
+    .calendar-button { display: inline-flex; align-items: center; justify-content: center; min-height: 54px; border: 1px solid var(--gold); border-radius: 4px; background: transparent; padding: 8px 26px; font-size: 22px; text-decoration: none; color: var(--gold-deep); transition: background .2s; }
+    .calendar-button:hover { background: #f2ebdb; }
+    .venue-section { position: relative; padding: 76px 24px 85px; background: #f3f4eb; }
+    .venue-section .section-title { font-size: clamp(38px, 10vw, 57px); margin: 42px auto 18px; line-height: 1.5; }
+    .target-symbol { display: block; font: 40px Georgia, serif; color: var(--gold); margin: 18px 0 10px; }
+    .venue-ar { font-size: clamp(22px, 5vw, 28px); margin: 0 0 11px; }
+    .venue-note { color: #8d877a; font-size: 22px; margin: 0 0 28px; }
+    .map-button { display: inline-flex; justify-content: center; align-items: center; flex-direction: row; gap: 15px; width: min(100%, 315px); min-height: 62px; border-radius: 4px; background: var(--gold); color: #fffaf2; font-size: clamp(22px, 5.5vw, 27px); text-decoration: none; padding: 10px 15px; transition: background .2s; }
+    .map-button:hover { background: var(--gold-deep); }
+    .map-button svg { flex: 0 0 20px; width: 20px; height: 20px; }
+    @media (max-width: 380px) {
+      .cover { padding: 94px 18px 45px; }
+      .cover h1 { font-size: 45px; }
+      .opening-section { padding-top: 99px; }
+      .floral.top-left { left: -98px; }
+      .big-names { font-size: 60px; }
+      .special-date { font-size: 29px; }
+      .schedule-item { padding-right: 5px; padding-left: 5px; }
+      .venue-note { font-size: 20px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-duration: .01ms !important; scroll-behavior: auto !important; transition-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body>
+<div class="site" id="site">
+  <section class="cover" id="cover" aria-label="غلاف دعوة الزفاف">
+    <p class="english">A day to remember</p>
+    <h1>علي الدين وآلاء</h1>
+    <p class="intro">بكل الحب، ندعوكم لتكونوا جزءًا من حكايتنا</p>
+    <div class="envelope" aria-hidden="true">
+      <div class="paper"></div>
+      <div class="back-fold"></div>
+      <div class="lower-fold"></div>
+      <div class="front-fold"></div>
+      <svg class="fold-lines" viewBox="0 0 360 238" preserveAspectRatio="none">
+        <path d="M1 12L180 139L359 12M1 237L180 120L359 237" fill="none" stroke="#d7c5a4" stroke-width="1.2" opacity=".6" />
+        <path d="M1 1H359V237H1Z" fill="none" stroke="#cabb9d" stroke-width="1.1" />
+      </svg>
+      <div class="seal"><span>ع ✳ آ</span></div>
+    </div>
+    <button class="open-button" id="openInvite" type="button" aria-controls="invitation" aria-expanded="false">
+      افتح الدعوة
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 8.5c0 5.6-8.8 11-8.8 11s-8.8-5.4-8.8-11a4.7 4.7 0 0 1 8.8-2.1 4.7 4.7 0 0 1 8.8 2.1Z" /></svg>
+    </button>
+    <p class="cover-meta">Agamy garden · ٦ نوفمبر ٢٠٢٦</p>
+  </section>
+
+  <main class="invitation" id="invitation" aria-label="تفاصيل دعوة الزفاف">
+    <!-- Decorative floral line art: embedded in the HTML, no external picture needed. -->
+    <svg aria-hidden="true" class="floral top-left" viewBox="0 0 310 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M-27 60C25 87 79 107 151 123C197 131 232 148 281 177M-8 176C46 177 77 201 134 249C171 280 210 290 256 310" stroke="#909c80" stroke-width="2" />
+      <path d="M145 122C166 98 191 99 219 112C191 132 168 132 145 122ZM96 204C119 173 145 181 166 194C146 211 122 217 96 204ZM181 280C204 254 229 261 246 278C221 292 200 297 181 280Z" fill="#879578" />
+      <path d="M142 121L202 114M103 202L151 195M181 280L233 280" stroke="#e3e2d4" stroke-width="1.1" />
+      <g transform="translate(36 55)" stroke="#cdbca4" stroke-width=".9"><circle r="47" fill="#eae2d5" opacity=".75"/><path d="M-42 5C-47-20-25-46 0-45C25-46 48-23 45 2C47 22 26 43 4 44C-18 45-39 26-42 5Z"/><path d="M-33 1C-38-17-22-35 0-35C19-36 36-19 36 2C36 20 21 34 2 35C-17 35-33 21-33 1Z"/><path d="M-25-4C-23-19-13-26 0-27C15-28 27-14 27 1C28 16 17 27 0 27C-15 26-27 15-25-4Z"/><path d="M-17 1C-17-10-7-17 3-17C14-16 18-6 17 3C15 15 6 18-3 17C-12 15-17 8-17 1Z"/></g>
+      <g transform="translate(87 157) scale(.76)" stroke="#cdbca4" stroke-width=".9"><circle r="48" fill="#ebe3d7" opacity=".8"/><path d="M-43 4C-46-22-29-44 1-46C27-45 46-23 46 4C45 28 24 45 1 45C-25 45-43 24-43 4Z"/><path d="M-34 2C-35-17-19-35 0-36C20-37 36-20 36 0C36 22 17 36-2 36C-22 35-35 19-34 2Z"/><path d="M-26 0C-25-15-12-27 1-27C17-26 27-11 27 1C27 17 11 27 0 27C-15 26-26 16-26 0Z"/><path d="M-16-1C-17-12-5-17 4-16C13-15 18-7 16 3C13 14 7 16-4 16C-13 14-17 7-16-1Z"/></g>
+      <g transform="translate(151 223) scale(.46)" stroke="#cdbca4" stroke-width="1.3"><circle r="47" fill="#ece4d8" opacity=".85"/><circle r="39"/><circle r="32"/><circle r="23"/><circle r="14"/></g>
+    </svg>
+
+    <section class="opening-section" aria-labelledby="full-couple">
+      <p class="english invitation-overline">The wedding invitation</p>
+      <p class="greeting">بكل معاني الحب والود</p>
+      <p class="family-lead">تتشرف عائلتنا</p>
+      <div class="family-block">
+        <div class="family-title">السيد</div>
+        <div class="family-name">أحمد عبد الباسط الجندي</div>
+        <div class="and">و</div>
+        <div class="family-title">السيد</div>
+        <div class="family-name">عاطف عبدالله غازي</div>
+      </div>
+      <p class="wedding-lead">بدعوتكم لحضور حفل زفاف</p>
+      <h2 class="big-names" id="full-couple"><span>علي الدين</span><small>و</small><span>آلاء</span></h2>
+      <div class="heart-rule" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25"><path d="M20.8 8.5C20.8 14.1 12 20 12 20S3.2 14.1 3.2 8.5A4.8 4.8 0 0 1 12 6.4a4.8 4.8 0 0 1 8.8 2.1Z"/></svg></div>
+    </section>
+
+    <section class="story-section" aria-label="موعد فرحتنا">
+      <svg aria-hidden="true" class="floral middle-right" viewBox="0 0 310 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M-27 60C25 87 79 107 151 123C197 131 232 148 281 177M-8 176C46 177 77 201 134 249C171 280 210 290 256 310" stroke="#909c80" stroke-width="2" />
+        <path d="M145 122C166 98 191 99 219 112C191 132 168 132 145 122ZM96 204C119 173 145 181 166 194C146 211 122 217 96 204Z" fill="#879578" />
+        <g transform="translate(36 55)" stroke="#cdbca4" stroke-width=".9"><circle r="47" fill="#eae2d5" opacity=".75"/><circle r="41"/><circle r="34"/><circle r="27"/><circle r="20"/><circle r="12"/></g>
+        <g transform="translate(87 157) scale(.76)" stroke="#cdbca4" stroke-width=".9"><circle r="48" fill="#ebe3d7" opacity=".8"/><circle r="40"/><circle r="32"/><circle r="23"/><circle r="14"/></g>
+      </svg>
+      <p class="couple-full">علي الدين عاطف غازي · آلاء أحمد الجندي</p>
+      <p class="romantic-message">لأن أجمل لحظات العمر تكتمل بمن نحب،<br/>يسعدنا أن تشاركونا بداية حكايتنا.</p>
+      <p class="special-date">الجمعة، ٦ نوفمبر ٢٠٢٦</p>
+      <p class="scroll-hint">تفاصيل يومنا ↓</p>
+      <div class="thin-rule"></div>
+      <p class="english">Our special day</p>
+      <h2 class="section-title">موعدنا مع الفرحة</h2>
+      <p class="day-text">نتظركم بكل حب يوم الجمعة <span>٦ نوفمبر ٢٠٢٦</span></p>
+      <div class="schedule" aria-label="مواعيد الحفل">
+        <div class="schedule-item">
+          <p class="schedule-label">بداية الفرح</p>
+          <p class="schedule-time">٣:٠٠</p>
+          <p class="schedule-period">عصرًا</p>
+        </div>
+        <div class="schedule-item">
+          <p class="schedule-label">كتب الكتاب</p>
+          <p class="schedule-time">٤:٠٠</p>
+          <p class="schedule-period">عصرًا</p>
+        </div>
+      </div>
+      <a class="calendar-button" id="calendarLink" target="_blank" rel="noopener noreferrer" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=%D9%81%D8%B1%D8%AD%20%D8%B9%D9%84%D9%8A%20%D8%A7%D9%84%D8%AF%D9%8A%D9%86%20%D9%88%D8%A2%D9%84%D8%A7%D8%A1&amp;dates=20261106T130000Z%2F20261106T150000Z&amp;details=%D8%A8%D8%AF%D8%A7%D9%8A%D8%A9%20%D8%A7%D9%84%D9%81%D8%B1%D8%AD%20%D9%A3%3A%D9%A0%D9%A0%20%D8%B9%D8%B5%D8%B1%D9%8B%D8%A7%20%E2%80%94%20%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D9%83%D8%AA%D8%A7%D8%A8%20%D9%A4%3A%D9%A0%D9%A0%20%D8%B9%D8%B5%D8%B1%D9%8B%D8%A7&amp;location=Agamy%20garden%2C%20Alexandria%2C%20Egypt">أضف الموعد إلى التقويم</a>
+    </section>
+
+    <section class="venue-section" aria-label="موقع الفرح">
+      <p class="english">The venue</p>
+      <span class="target-symbol" aria-hidden="true">⊙</span>
+      <h2 class="section-title" lang="en" dir="ltr">Agamy garden</h2>
+      <p class="venue-ar">فيلا <span lang="en" dir="ltr">Agamy garden</span></p>
+      <p class="venue-note">خطوة أقرب إلى يومنا الجميل</p>
+      <a class="map-button" href="https://maps.app.goo.gl/ixGtLsFcHzMLeehR6" target="_blank" rel="noopener noreferrer">
+        افتح موقع الفرح على الخريطة
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19L19 5M8 5h11v11"/></svg>
+      </a>
+    </section>
+  </main>
+</div>
+<script>
+  (function () {
+    'use strict';
+    const site = document.getElementById('site');
+    const openButton = document.getElementById('openInvite');
+    const invitation = document.getElementById('invitation');
+    openButton.addEventListener('click', () => {
+      site.classList.add('is-open');
+      openButton.setAttribute('aria-expanded', 'true');
+      window.scrollTo({ top: 0, behavior: 'instant' });
+      invitation.setAttribute('tabindex', '-1');
+      invitation.focus({ preventScroll: true });
+    });
+  })();
+</script>
+</body>
+</html>
